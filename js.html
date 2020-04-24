@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function()
+    {
+        //字符串转整数
+        var str = "15";
+        console.log(typeof(str));           //string
+        console.log(typeof(parseInt(str))); //string
+        console.log(typeof(+str));          //number
+        console.log(typeof(~~"15"));        //number
+        //整数转字符串
+        console.log('整数转字符串');
+        var num = 12;
+        console.log(typeof(num));           //number
+        console.log(typeof(num.toString()));//string
+        console.log(typeof(num+''));        //string
+        //幂操作
+        console.log(Math.pow(2, 3));        //8
+        console.log(2**3);                  //8
+        //浮点数取整处理
+        var flot = 38.64;
+        console.log(Math.floor(flot));      //38
+        console.log(Math.ceil(flot));       //39四舍五入
+        console.log(Math.round(flot));      //38
+        console.log(flot | 0);              //38
+        console.log(1536 / 10 | 0);         //153去掉最后一个数
+    });
+</script>
